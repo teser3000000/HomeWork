@@ -141,7 +141,15 @@
                     }
                     break;
                 case int i when (i >= 2 && i <= 4):
+                    if (n >= 12 && n <= 14)
+                    {
+                        Console.WriteLine($"Мне {n} лет");
+                    }
+                    else
+                    {
                         Console.WriteLine($"Мне {n} года");
+                    }
+                     
                     break;
                 default:
                     Console.WriteLine($"Мне {n} лет");
