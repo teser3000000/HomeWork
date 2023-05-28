@@ -14,7 +14,7 @@
             int number;
 
             Console.Write("Введите температуру в шкале Цельсия: ");
-            while (!double.TryParse(Console.ReadLine(), out celsius) || celsius == 0)
+            while (!double.TryParse(Console.ReadLine(), out celsius) || celsius <= -273.15)
                 Error("Введите температуру в шкале Цельсия:");
             Console.Clear();
 
