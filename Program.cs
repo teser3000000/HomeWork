@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            FirstTask();
+            FourthTask();
         }
         static void FirstTask()
         {
@@ -127,15 +127,22 @@
                 Error("Сколько вам лет?\n");
             Console.Clear();
             numberEnd = n % 10;
+            
             switch (numberEnd)
             {
                 case 1:
-                    Console.WriteLine($"Мне {n} год");
+                    if (n == 11)
+                    {
+                        Console.WriteLine($"Мне {n} лет");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Мне {n} год");
+                    }
                     break;
                 case int i when (i >= 2 && i <= 4):
-                    Console.WriteLine($"Мне {n} года");
+                        Console.WriteLine($"Мне {n} года");
                     break;
-                case int i when (i >= 11 && i <= 14):
                 default:
                     Console.WriteLine($"Мне {n} лет");
                     break;
